@@ -1,0 +1,35 @@
+/**
+ * Create a .testimony-card component using nested CSS.
+ *
+ * 1. Use clamp() for padding that scales fluidly
+ *    between a minimum and maximum.
+ *
+ * 2. Nest the h3, p, and a selectors inside
+ *    .testimony-card WITHOUT using & (they are
+ *    descendants, not compound selectors).
+ *
+ * 3. Use & correctly for the a:hover pseudo class.
+ *
+ * 4. Add a nested @media query that changes the
+ *    layout at a wider viewport.
+ */
+
+.testimony-card {
+    /* Your fluid padding here. */
+
+    h3 {
+        /* Heading styles here. */
+    }
+
+    p {
+        /* Paragraph styles here. */
+    }
+
+    a {
+        /* Link styles here. */
+
+        /* Add :hover with proper & usage. */
+    }
+
+    /* Add a nested @media query here. */
+}

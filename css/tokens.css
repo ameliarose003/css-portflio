@@ -1,0 +1,29 @@
+/* tokens.css */
+:root {
+    /* Colors */
+    --color-primary: #1d4e89;
+    --color-accent: #e2a03f;
+    --color-text: #2c2c2c;
+    --color-bg: #fafafa;
+    --color-danger: #c0392b;
+    --color-success: #27ae60;
+
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+
+    /* Typography */
+    --font-body: 'Segoe UI', system-ui, sans-serif;
+    --font-heading: Georgia, serif;
+    --text-base: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.75rem;
+
+    /* Borders and Shadows */
+    --radius: 0.375rem;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
