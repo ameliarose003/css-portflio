@@ -1,0 +1,52 @@
+/* Base element styles: body, headings, links, lists.
+   No classes here, only bare HTML element selectors.
+   Reference tokens with var(). */
+
+/* TODO: Style body, headings, links, and other base elements */
+
+body {
+   margin: 0;
+   background-color: var(--color-background);
+   font-family: var(--font-body);
+
+   p {
+      font-family: var(--font-paragraph);
+   }
+
+   a {
+      /* text-decoration: none; */
+      color: var(--color-text);
+      /* background-color: var(--color-primary); */
+   }
+}
+
+
+.site-nav {
+   padding: var(--spacing-sm);
+   ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      list-style-type: none;
+      padding: var(--spacing-sm);
+      border-bottom: 1px solid var(--color-text);
+      a {
+         text-decoration: none;
+         padding: calc(var(--spacing-sm) - 0.5rem);
+         border-radius: var(--rounded-md);
+
+         &:hover {
+            background-color: var(--color-primary);
+            color: var(--color-background);
+         }
+      }
+   }
+}
+
+header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
