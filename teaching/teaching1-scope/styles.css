@@ -1,0 +1,75 @@
+:root {
+    --white: rgb(251, 241, 229);
+    --black: rgb(42, 22, 22);
+    --magenta: rgb(255, 0, 255);
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+section div {
+    padding: 1rem;
+    margin: 1rem;
+    h2 {
+        text-align: center;
+    }
+}
+
+.example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+@scope (.light) {
+    :scope {
+        background-color: var(--white);
+        color:  var(--black);
+    }
+
+    a {
+        color: var(--black);
+    }
+}
+
+@scope (.light) to (.stop) {
+    p {
+        color: var(--magenta);
+    }
+}
+
+@scope (.dark) {
+    :scope {
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    a {
+        color: var(--white);
+    }
+}
+
+
+
+.white {
+    background-color: var(--white);
+    color:  var(--magenta);
+
+    a {
+        color: var(--black);
+    }
+}
+
+.black {
+    background-color: var(--black);
+    color:  var(--white);
+
+    a {
+        color: var(--white);
+    }
+}

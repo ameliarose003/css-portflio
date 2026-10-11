@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>@scope Root Selector Examples</h1>
+    <section class="example">
+        <div class="scope">
+            <h2>Example with scope</h2>
+
+            <div class="light">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <a href="#" class="light">a tag for example</a> Officia dolorum accusantium aliquid blanditiis magni, beatae perferendis molestiae repellendus voluptate eaque saepe inventore? Eveniet, qui! Quidem optio unde numquam nam necessitatibus deleniti ipsa quia magni, assumenda beatae excepturi eligendi maiores animi est aut odio modi quasi impedit itaque consequatur minus dolores.</p>
+                <a class="dark">Clickable a tag</a>
+                <p class="dark">This is in dark mode.</p>
+                <div class="stop">
+                    <p >This is outside the scope</p>
+                </div>
+            </div>
+            <div class="dark">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia dolorum accusantium aliquid blanditiis magni, <a href="#" class="light">a tag for example</a> beatae perferendis molestiae repellendus voluptate eaque saepe inventore? Eveniet, qui! Quidem optio unde numquam nam necessitatibus deleniti ipsa quia magni, assumenda beatae excepturi eligendi maiores animi est aut odio modi quasi impedit itaque consequatur minus dolores.</p>
+                <a class="light">Clickable a tag</a>
+                <p class="light">This is in light mode.</p>
+            </div>  
+        </div>
+        <div class="scope">
+            <h2>Example without scope</h2>  
+
+            <div class="white">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <a href="#" class="white">a tag for example</a> Officia dolorum accusantium aliquid blanditiis magni, beatae perferendis molestiae repellendus voluptate eaque saepe inventore? Eveniet, qui! Quidem optio unde numquam nam necessitatibus deleniti ipsa quia magni, assumenda beatae excepturi eligendi maiores animi est aut odio modi quasi impedit itaque consequatur minus dolores.</p>
+                <a class="black">Clickable a tag</a>
+                <p class="black">This is in dark mode.</p>
+                <div class="stop">
+                    <p >This is outside the scope</p>
+                </div>                
+            </div>
+            <div class="black">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia dolorum accusantium aliquid blanditiis magni, <a href="#" class="white">a tag for example</a> beatae perferendis molestiae repellendus voluptate eaque saepe inventore? Eveniet, qui! Quidem optio unde numquam nam necessitatibus deleniti ipsa quia magni, assumenda beatae excepturi eligendi maiores animi est aut odio modi quasi impedit itaque consequatur minus dolores.</p>
+                <a class="white">Clickable a tag</a>
+                <p class="white">This is in light mode.</p>
+            </div> 
+        </div>
+    </section>
+    <section class="example">
+
+    </section>
+</body>
+</html>
