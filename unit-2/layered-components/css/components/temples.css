@@ -2,3 +2,19 @@
    Style the status badges differently based on class (.open, .construction). */
 
 /* TODO: Style the temple list */
+
+.temples {
+   list-style-type: none;
+   li {
+      display: grid;
+      
+   }
+}
+
+.open {
+   color: green;
+}
+
+.construction {
+   color: red;
+}
