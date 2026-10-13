@@ -1,0 +1,9 @@
+.cards {
+
+}
+.card-group {
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-accent);
+    margin: var(--space-sm);
+    padding: var();
+}
