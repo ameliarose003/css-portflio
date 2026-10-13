@@ -1,13 +1,4 @@
-/* tokens.css */
 :root {
-    /* Colors */
-    --color-primary: #1d4e89;
-    --color-accent: #e2a03f;
-    --color-text: #2c2c2c;
-    --color-bg: #fafafa;
-    --color-danger: #c0392b;
-    --color-success: #27ae60;
-
     /* Spacing */
     --space-xs: 0.25rem;
     --space-sm: 0.5rem;
@@ -15,8 +6,11 @@
     --space-lg: 2rem;
     --space-xl: 4rem;
 
+
     /* Typography */
-    --font-body: 'Segoe UI', system-ui, sans-serif;
+    --font-body: system-ui, -apple-system, sans-serif;
+
+    --font-body-2: 'Segoe UI', system-ui, sans-serif;
     --font-heading: Georgia, serif;
     --text-base: 1rem;
     --text-lg: 1.25rem;
