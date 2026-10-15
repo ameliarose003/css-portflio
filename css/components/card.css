@@ -3,6 +3,10 @@
     flex-direction: row;
     margin: var(--spacing-md);
     
+    h2 {
+        margin: var(--spacing-lg);
+
+    }
     p {
         /* text-align: center; */
         justify-items: center;

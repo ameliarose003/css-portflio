@@ -23,11 +23,11 @@
     --accent-800: color-mix(in oklch, var(--seed-accent) 40%, black);
 
     /* Colors */
-    --color-primary: #253668;
+    /* --color-primary: #253668;
     --color-bg: #fff9fa;
     --color-text: #743c5a;
     --color-accent: #f3f6ff;
-    --color-accent-2: lch(52.11% 54.53 359.53);
+    --color-accent-2: lch(52.11% 54.53 359.53); */
 
 }
 
@@ -46,16 +46,16 @@ html:has(input[name='theme-preference'][value='dark']:checked) {
 :root,
 html {
     /* ---- Semantic tokens ---- */
-    --color-bg: light-dark(var(--seed-bg), oklch(0.18 0.02 330 ));
-    --color-surface: light-dark(var(--seed-surface), oklch(0.22 0.03 330 ));
-    --color-text: light-dark(var(--seed-text), oklch(0.88 0.02 330 ));
-    --color-text-muted: light-dark(var(--seed-text-muted), oklch(0.68 0.03 330 ));
-    --color-accent: light-dark(var(--seed-accent), oklch(0.62 0.15 330 ));
-    --color-accent-hover: light-dark(var(--seed-accent-hover), oklch(0.68 0.18 330 ));
+    --color-bg: light-dark(var(--seed-bg), oklch(0.18 0.02 56.79 ));
+    --color-surface: light-dark(var(--seed-surface), oklch(0.22 0.03 56.79 ));
+    --color-text: light-dark(var(--seed-text), oklch(0.88 0.02 56.79 ));
+    --color-text-muted: light-dark(var(--seed-text-muted), oklch(0.68 0.03 56.79 ));
+    --color-accent: light-dark(var(--seed-accent), oklch(0.62 0.15 56.79 ));
+    --color-accent-hover: light-dark(var(--seed-accent-hover), oklch(0.68 0.18 56.79 ));
     --color-link: light-dark(var(--seed-link), oklch(0.65 0.16 240));
-    --color-link-hover: light-dark(var(--seed-link-hover), oklch(0.72 0.18 330 ));
-    --color-border: light-dark(var(--seed-border), oklch(0.32 0.02 330 ));
-    --color-border-strong: light-dark(var(--seed-border-strong), oklch(0.38 0.02 330 ));
+    --color-link-hover: light-dark(var(--seed-link-hover), oklch(0.72 0.18 56.79 ));
+    --color-border: light-dark(var(--seed-border), oklch(0.32 0.02 56.79 ));
+    --color-border-strong: light-dark(var(--seed-border-strong), oklch(0.38 0.02 56.79 ));
 
     /* Tint the native checkboxes, radios, and range sliders */
     accent-color: var(--color-accent);
