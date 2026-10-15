@@ -4,12 +4,29 @@ body {
     background-color: var(--color-bg);
     line-height: 1.6;
     padding: var(--space-lg);
+    
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--seed-accent);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    /* justify-self: center; */
+    margin: 0 auto;
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--accent-200);
 }
 
 a:hover {
-    color: var(--color-primary-hover);
+    color: var(--seed-accent-hover);
 }

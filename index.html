@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ami's css Portfolio</title>
-    <link rel="stylesheet" href="dist/styles.css">
+    <script src="js/theme-preference.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
         <h1>Ami's css Portfolio</h1>
-        <div class="intro">
-            <p>Hi and welcome to my CSS Portfolio! I am Ami Halsey. I am a Senior at Brigham Young University - Idaho Majoring in Web Design and Development. I live in Missouri with my husband and 9 month old baby. </p>
-        </div>
+
+        <details class="theme-menu">
+            <summary class="theme-control">
+                <span class="visually-hidden">Color scheme</span>
+            </summary>
+            <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                <label class="theme-control theme-pick" data-theme-pick="light">
+                    <input name="theme-preference" type="radio" value="light">
+                    <span aria-hidden="true">&#9788;&#65039;</span>
+                    <span class="visually-hidden">Light</span>
+                </label>
+                <label class="theme-control theme-pick" data-theme-pick="system">
+                    <input name="theme-preference" type="radio" value="system" checked>
+                    <span aria-hidden="true">&#9881;&#65039;</span>
+                    <span class="visually-hidden">System default</span>
+                </label>
+                <label class="theme-control theme-pick" data-theme-pick="dark">
+                    <input name="theme-preference" type="radio" value="dark">
+                    <span aria-hidden="true">&#127766;</span>
+                    <span class="visually-hidden">Dark</span>
+                </label>
+            </div>
+        </details>
     </header>
     <main>
+        <div class="intro">
+            <img src="images/my-family.jpeg" alt="Me and my family">
+            <div class="intro-info">
+                <p>Hi and welcome to my CSS Portfolio! I am Ami Halsey. I am a Senior at Brigham Young University - Idaho Majoring in Web Design and Development. I live in Missouri with my husband and 9 month old baby. This portfolio is meant to show my progress in CSS and the new skills learned Fall 2026. </p>
+                <p><strong>Major:</strong> Web Design and Development</p>
+                <p><strong>Other Skills and Coding Languages: </strong>HTML, CSS, JS, Git, Node.js, Lightning CSS, Python, C#, Svelte, Astro.</p>
+                <p><strong>Github Profile: </strong>https://github.com/ameliarose003</p>
+                <p><strong>LinkedIn Profile: </strong>https://www.linkedin.com/in/ami-cross-halsey/</p>
+            </div>
+        </div>
         <div class="cards">
             <div class="card-group">
                 <a href="unit-1/custom-properties/index.html">Ward Activity Board</a>

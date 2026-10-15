@@ -1,9 +1,35 @@
-.cards {
+.intro {
+    display: flex;
+    flex-direction: row;
+    margin: var(--spacing-md);
+    
+    p {
+        /* text-align: center; */
+        justify-items: center;
+        align-content: center;
+        margin: var(--spacing-lg);
+        /* width: 75%; */
 
+    }
+    img {
+        justify-items: center;
+        width: 300px;
+        border-radius: var(--radius-sm);
+
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    margin: var(--spacing-md);
 }
 .card-group {
     border: 1px solid var(--color-primary);
     background-color: var(--color-accent);
-    margin: var(--space-sm);
-    padding: var();
+    /* margin: var(--spacing-md); */
+    padding: var(--spacing-md);
+    border-radius: var(--radius-sm  );
+    color: var(--accent-200);
 }
