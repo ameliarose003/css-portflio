@@ -1,0 +1,70 @@
+:root {
+    --color-bg: #fffcfc;
+
+    --brand-green: rgb(0, 255, 136);
+    --green-test: rgb(0, 255, 136);
+
+    --brand-pink: rgb(255, 0, 255);
+    --pink-test: rgb(255, 0, 255);
+}
+
+@media (color-gamut: p3) {
+    :root {
+        --brand-green: color(display-p3 0.0 1.0 0.53);
+        
+    }
+}
+
+@supports (color: color(display-p3 0 0 0 )) {
+    :root {
+        /* --brand-green: color(display-p3 0.0 1.0 0.53); */
+        --brand-pink: color(display-p3 1.0 0.0 1.0);
+    }
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin: 2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    padding: 1rem;
+}
+
+.gamut-green {
+    background-color: var(--brand-green);
+
+}
+
+.space-green {
+    background-color: var(--green-test);
+}
+
+.gamut-pink {
+    background-color: var(--brand-pink);
+
+}
+
+.space-pink {
+    background-color: var(--pink-test);
+}
+
+.oklch-pink {
+    background-color: oklch(0.669 0.354 329.21);
+}
