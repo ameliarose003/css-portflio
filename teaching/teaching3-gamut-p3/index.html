@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gamut vs Color Space</title>
+</head>
+<body>
+    <nav class="site-nav">
+        <a href="../../index.html">&larr; Home</a>
+    </nav>
+
+    <header class="board-header">
+        <h1>Display Gamut vs. Color space</h1>
+        <p>Here we will explore the difference between a display gamut and a color space.</p>
+    </header>
+    <main>
+        <div class="gamut-green">
+            <h3>Gamut-P3</h3>
+            <p>Uses @media to check if the browser is able to display the P3 color.</p>
+        </div>
+        <div class="space-green">
+            <h3>Color-Space</h3>
+            <p>Uses rgb(0, 255, 136)</p>
+        
+        </div>
+        <div class="gamut-pink">
+            <h3>Gamut-P3</h3>
+            <p>Uses @supports to check if the browser is able to display the P3 color.</p>
+        </div>
+        <div class="space-pink">
+            <h3>Color-Space</h3>
+            <p>Uses rgb(255, 0, 255)</p>
+        </div>
+        <div class="oklch-pink">
+            <h3>Color-Space</h3>
+            <p>Uses oklch(0.669 0.354 329.21)</p>
+        </div>
+    </main>
+    <ul>
+        <li>The difference between a color space (like oklch()) and a display gamut (like sRGB or P3), and why they are independent concepts</li>
+        <p>Color space describes the colors mathematically.</p>
+        <p>Display gamut is the actual color the screen can reproduce</p>
+        <li>What Display P3 is, which devices support it, and where the extra color range actually shows up (greens and reds, not blues)</li>
+        <p>Display P3 is a color gamut made by apple covering about 25% more of the visible color spectrum than sRGB. </p>
+        <p>It's supported by most apple products, and newer windows and android as well.</p>
+        <p>You should always have a fallback on the Display P3</p>
+        <li> color(display-p3 r g b) syntax and how the channels differ from rgb() (normalized 0 to 1 instead of 0 to 255)</li>
+        <li>At least one fallback pattern: the duplicate declaration approach or the @supports / @media (color-gamut: p3) guard</li>
+        <p>Shown in the css</p>
+        <li>How oklch() already reaches into P3 territory at high chroma values, and when you would use color(display-p3 ...) directly instead</li>
+        <p></p>
+    </ul>
+</body>
+</html>
