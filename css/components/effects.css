@@ -1,0 +1,27 @@
+
+.hero {
+    position: relative;
+
+}
+
+.hero .hero-image {
+    display: block;
+    width: 100%;
+    background: linear-gradient(var(--accent-200), var(--accent-800)), url('https://picsum.photos/seed/hero-effects/1200/500');   
+
+}
+
+.hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h1 {
+        text-shadow: var(--shadow-md);
+    }
+    p {
+        text-shadow: var(--shadow-sm);
+    }
+}
+

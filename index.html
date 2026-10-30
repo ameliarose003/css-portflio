@@ -9,37 +9,45 @@
 </head>
 <body>
     <header>
-        <h1>Ami's css Portfolio</h1>
+        <h1><a href="../../index.html">Ami's css Portfolio</a></h1>
 
-        <details class="theme-menu">
-            <summary class="theme-control">
-                <span class="visually-hidden">Color scheme</span>
-            </summary>
-            <div class="theme-extra" role="group" aria-label="Choose color scheme">
-                <label class="theme-control theme-pick" data-theme-pick=""="light">
-                    <input name="theme-preference" type="radio" value="light">
-                    <span aria-hidden="true">&#9788;&#65039;</span>
-                    <span class="visually-hidden">Light</span>
-                </label>
-                <label class="theme-control theme-pick" data-theme-pick="system">
-                    <input name="theme-preference" type="radio" value="system" checked>
-                    <span aria-hidden="true">&#9881;&#65039;</span>
-                    <span class="visually-hidden">System default</span>
-                </label>
-                <label class="theme-control theme-pick" data-theme-pick="dark">
-                    <input name="theme-preference" type="radio" value="dark">
-                    <span aria-hidden="true">&#127766;</span>
-                    <span class="visually-hidden">Dark</span>
-                </label>
-            </div>
-        </details>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="unit-3\visual-effects\index.html">Gallery</a></li>
+                <li><a href="#" aria-current="page">Effects</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            
+            <details class="theme-menu">
+                <summary class="theme-control">
+                    <span class="visually-hidden">Color scheme</span>
+                </summary>
+                <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                    <label class="theme-control theme-pick" data-theme-pick=""="light">
+                        <input name="theme-preference" type="radio" value="light">
+                        <span aria-hidden="true">&#9788;&#65039;</span>
+                        <span class="visually-hidden">Light</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="system">
+                        <input name="theme-preference" type="radio" value="system" checked>
+                        <span aria-hidden="true">&#9881;&#65039;</span>
+                        <span class="visually-hidden">System default</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="dark">
+                        <input name="theme-preference" type="radio" value="dark">
+                        <span aria-hidden="true">&#127766;</span>
+                        <span class="visually-hidden">Dark</span>
+                    </label>
+                </div>
+            </details>
+        </nav>
     </header>
     <main>
         <div class="intro">
             <img src="images/my-family.jpeg" alt="Me and my family">
             <div class="intro-info">
                 <h2>About Me</h2>
-                <p>Hi and welcome to my CSS Portfolio! I am Ami Halsey. I am a Senior at Brigham Young University - Idaho Majoring in Web Design and Development. I live in Missouri with my husband and 9 month old baby. This portfolio is meant to show my progress in CSS and the new skills learned Fall 2026. </p>
+                <p>Hi and welcome to my CSS Portfolio! I am Ami Halsey. I am a Senior at Brigham Young University - Idaho Majoring in Web Design and Development. I live in Missouri with my husband and baby. This portfolio is meant to show my progress in CSS and the new skills learned Fall 2026. </p>
                 <p><strong>Major:</strong> Web Design and Development</p>
                 <p><strong>Other Skills and Coding Languages: </strong>HTML, CSS, JS, Git, Node.js, Lightning CSS, Python, C#, Svelte, Astro.</p>
                 <p><strong>Github Profile: </strong>https://github.com/ameliarose003</p>
@@ -52,9 +60,24 @@
                 <p>I was given a ward activities page with a request to style it, emphasizing the skill of using <strong>custom properties</strong>.</p>
             </div>
             <div class="card-group">
-                
                 <a href="unit-2/layered-components/index.html">Scripture Study Companion</a>
                 <p>I was given a scripture study page with a request to style it emphasizing the skill of <strong>layered components</strong>.</p>
+            </div>
+            <div class="card-group">
+                <a href="unit-2\lightning-css-demo\index.html">Lightning CSS Demo</a>
+                <p>This was code given to me to practice applying <strong>Lghtning CSS</strong> to my code and explore the benefits of a css parser, transformer, and minifier.</p>
+            </div>
+            <div class="card-group">
+                <a href="unit-3\shape-margin\index.html">Shape Margin</a>
+                <p>I used this project to explore <strong>shape margin</strong> and it's effects in the code.</p>
+            </div>
+            <div class="card-group">
+                <a href="teaching\teaching1-scope\index.html">Scope</a>
+                <p>This project was made to explore <strong>scope</strong> in css.</p>
+            </div>
+            <div class="card-group">
+                <a href="teaching\teaching3-gamut-p3\index.html">Gamut Display P3</a>
+                <p>I made this example of <strong>gamut display p3</strong> to create a teaching video of how to use it.</p>
             </div>
         </div>
     </main>

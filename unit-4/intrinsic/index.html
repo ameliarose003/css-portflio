@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrinsic Sizing Keywords</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <a href="../../index.html">&larr; Home</a>
+    </nav>
+    <header>
+        <h1>Intrinsic Sizing Keywords</h1>
+    </header>
+    <main>
+        <h3>Min-content, max-content, fit-content()</h3>
+        <div class="three-example">
+            <div class="min-content">
+                <p>Ross Dress For Less</p>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolorem fugit architecto perspiciatis nulla dolorum!</p> -->
+                <p>Rexburg, ID</p>
+            </div>
+            <div class="max-content">
+                <p>Ross Dress For Less</p>
+                <p>Rexburg, ID</p>
+            </div>
+            <div class="fit-content">
+                <p>Ross Dress For Less</p>
+                <p>Rexburg, ID</p>
+            </div>
+        </div>
+        <div class="min-example">
+            <h3>Hardcoded 250px Minimum</h3>
+
+            <div class="container">
+                <div class="grid fixed-grid">
+                    <div>Item One</div>
+                    <div>Item Two</div>
+                    <div>Item Three</div>
+                </div>
+            </div>
+
+            <h3>Using min-content</h3>
+
+            <div class="container">
+                <div class="grid content-grid">
+                    <div>Item One</div>
+                    <div>Item Two</div>
+                    <div>Item Three</div>
+                </div>
+            </div>
+        </div>
+        <div class="max-example">
+            <h3>Using max-content</h3>
+            <div class="container">
+                <div>Short amount of text with max-container.</div>
+            </div>
+            <div class="container">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequatur iure illum assumenda accusantium dignissimos ex laudantium maiores, non odio enim, alias vitae? Quidem, quos ipsam. Recusandae est, eaque, maiores minima quia quam autem accusamus omnis dicta soluta explicabo nihil commodi corporis illum similique possimus neque maxime qui ratione et!
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
