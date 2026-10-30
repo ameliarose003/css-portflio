@@ -13,6 +13,35 @@ header {
     justify-content: space-between;
     padding: var(--spacing-lg);
     border-bottom: 1px solid var(--seed-accent);
+    h1 {
+        a {
+            color: var(--seed-accent);
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-lg);
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: var(--spacing-lg);
+        li a {
+            color: var(--seed-accent);
+            text-decoration: none;
+            :hover {
+                color: var(--accent-200);
+            }
+        }
+    }
 }
 
 main {

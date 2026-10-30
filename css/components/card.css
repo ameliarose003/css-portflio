@@ -1,23 +1,22 @@
 .intro {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
     margin: var(--spacing-md);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
     
     h2 {
-        margin: var(--spacing-lg);
+        margin: 0 var(--spacing-lg);
 
     }
     p {
-        /* text-align: center; */
-        justify-items: center;
-        align-content: center;
         margin: var(--spacing-lg);
-        /* width: 75%; */
-
     }
     img {
         justify-items: center;
-        width: 300px;
+        width: 100%;
+        height: auto;
+        max-width: 300px;
         border-radius: var(--radius-sm);
 
     }
