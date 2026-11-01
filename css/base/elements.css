@@ -17,6 +17,7 @@ header {
         a {
             color: var(--seed-accent);
             text-decoration: none;
+            cursor: pointer;
         }
     }
 }
@@ -34,7 +35,7 @@ nav {
         flex-direction: row;
         list-style: none;
         gap: var(--spacing-lg);
-        li a {
+        a {
             color: var(--seed-accent);
             text-decoration: none;
             :hover {
