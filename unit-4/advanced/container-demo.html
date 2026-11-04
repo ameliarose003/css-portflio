@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Demo</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="container-demo.css">
+
+</head>
+<body>
+     <header>
+        <h1><a href="../../index.html">Ami's CSS Portfolio</a></h1>
+
+        <nav class="site-nav">
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Articles</a>
+                <a href="#">About</a>
+            </ul>
+            
+            <details class="theme-menu">
+                <summary class="theme-control">
+                    <span class="visually-hidden">Color scheme</span>
+                </summary>
+                <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                    <label class="theme-control theme-pick" data-theme-pick=""="light">
+                        <input name="theme-preference" type="radio" value="light">
+                        <span aria-hidden="true">&#9788;&#65039;</span>
+                        <span class="visually-hidden">Light</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="system">
+                        <input name="theme-preference" type="radio" value="system" checked>
+                        <span aria-hidden="true">&#9881;&#65039;</span>
+                        <span class="visually-hidden">System default</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="dark">
+                        <input name="theme-preference" type="radio" value="dark">
+                        <span aria-hidden="true">&#127766;</span>
+                        <span class="visually-hidden">Dark</span>
+                    </label>
+                </div>
+            </details>
+        </nav>
+    </header>
+    <div class="page-content">
+        <aside class="sidebar">
+            <h2>Container Demo</h2>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="../advanced/sticky-demo.html">Sticky</a></li>
+                    <li><a href="../grid-layouts/cards.html">Cards</a></li>
+                    <li><a href="../grid-layouts/editorial.html">Editorial</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+    </div>
+
+</body>
+</html>

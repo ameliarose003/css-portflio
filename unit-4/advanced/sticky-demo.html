@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Demo</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="sticky-demo.css">
+
+</head>
+<body>
+     <header>
+        <h1><a href="../../index.html">Ami's CSS Portfolio</a></h1>
+
+        <nav class="site-nav">
+            <ul>
+                <a href="../../index.html">Home</a>
+                <a href="#">Articles</a>
+                <a href="#">About</a>
+            </ul>
+            
+            <details class="theme-menu">
+                <summary class="theme-control">
+                    <span class="visually-hidden">Color scheme</span>
+                </summary>
+                <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                    <label class="theme-control theme-pick" data-theme-pick=""="light">
+                        <input name="theme-preference" type="radio" value="light">
+                        <span aria-hidden="true">&#9788;&#65039;</span>
+                        <span class="visually-hidden">Light</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="system">
+                        <input name="theme-preference" type="radio" value="system" checked>
+                        <span aria-hidden="true">&#9881;&#65039;</span>
+                        <span class="visually-hidden">System default</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="dark">
+                        <input name="theme-preference" type="radio" value="dark">
+                        <span aria-hidden="true">&#127766;</span>
+                        <span class="visually-hidden">Dark</span>
+                    </label>
+                </div>
+            </details>
+        </nav>
+    </header>
+    <main>
+        <div class="sticky-container">
+            <ul>
+                <li><a href="#1">Paragraph 1</a></li>
+                <li><a href="#2">Paragraph 2</a></li>
+                <li><a href="#3">Paragraph 3</a></li>
+                <li><a href="#4">Paragraph 4</a></li>
+                <li><a href="#5">Paragraph 5</a></li>
+                <li><a href="#6">Paragraph 6</a></li>
+                <li><a href="#7">Paragraph 7</a></li>
+                <li><a href="#8">Paragraph 8</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Example Content For a CSS Sticky Demo</h2>
+            <p id="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur iusto nemo ut a nobis. Blanditiis nisi repudiandae in dolorum rem culpa officiis optio illo, deleniti aliquid architecto cumque dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime et enim molestiae praesentium sapiente quam voluptatum aliquam ab eaque debitis id veniam perspiciatis aliquid non ut, dolor illum quos accusamus nulla vero obcaecati, deleniti neque quaerat fugit. Provident, cumque, sequi cupiditate nesciunt, voluptates architecto voluptatibus omnis reiciendis veniam facilis non.</p>
+            <p id="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur iusto nemo ut a nobis. Blanditiis nisi repudiandae in dolorum rem culpa officiis optio illo, deleniti aliquid architecto cumque dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime et enim molestiae praesentium sapiente quam voluptatum aliquam ab eaque debitis id veniam perspiciatis aliquid non ut, dolor illum quos accusamus nulla vero obcaecati, deleniti neque quaerat fugit. Provident, cumque, sequi cupiditate nesciunt, voluptates architecto voluptatibus omnis reiciendis veniam facilis non.</p>
+            <p id="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur iusto nemo ut a nobis. Blanditiis nisi repudiandae in dolorum rem culpa officiis optio illo, deleniti aliquid architecto cumque dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime et enim molestiae praesentium sapiente quam voluptatum aliquam ab eaque debitis id veniam perspiciatis aliquid non ut, dolor illum quos accusamus nulla vero obcaecati, deleniti neque quaerat fugit. Provident, cumque, sequi cupiditate nesciunt, voluptates architecto voluptatibus omnis reiciendis veniam facilis non.</p>
+            <div class="img">
+                <img src="../../images/my-family.jpeg" alt="my family">
+            </div>
+            <p id="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur iusto nemo ut a nobis. Blanditiis nisi repudiandae in dolorum rem culpa officiis optio illo, deleniti aliquid architecto cumque dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime et enim molestiae praesentium sapiente quam voluptatum aliquam ab eaque debitis id veniam perspiciatis aliquid non ut, dolor illum quos accusamus nulla vero obcaecati, deleniti neque quaerat fugit. Provident, cumque, sequi cupiditate nesciunt, voluptates architecto voluptatibus omnis reiciendis veniam facilis non.</p>
+            <p id="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur iusto nemo ut a nobis. Blanditiis nisi repudiandae in dolorum rem culpa officiis optio illo, deleniti aliquid architecto cumque dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime et enim molestiae praesentium sapiente quam voluptatum aliquam ab eaque debitis id veniam perspiciatis aliquid non ut, dolor illum quos accusamus nulla vero obcaecati, deleniti neque quaerat fugit. Provident, cumque, sequi cupiditate nesciunt, voluptates architecto voluptatibus omnis reiciendis veniam facilis non.</p>
+            <p id="6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur iusto nemo ut a nobis. Blanditiis nisi repudiandae in dolorum rem culpa officiis optio illo, deleniti aliquid architecto cumque dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime et enim molestiae praesentium sapiente quam voluptatum aliquam ab eaque debitis id veniam perspiciatis aliquid non ut, dolor illum quos accusamus nulla vero obcaecati, deleniti neque quaerat fugit. Provident, cumque, sequi cupiditate nesciunt, voluptates architecto voluptatibus omnis reiciendis veniam facilis non.</p>
+            <p id="7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur iusto nemo ut a nobis. Blanditiis nisi repudiandae in dolorum rem culpa officiis optio illo, deleniti aliquid architecto cumque dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime et enim molestiae praesentium sapiente quam voluptatum aliquam ab eaque debitis id veniam perspiciatis aliquid non ut, dolor illum quos accusamus nulla vero obcaecati, deleniti neque quaerat fugit. Provident, cumque, sequi cupiditate nesciunt, voluptates architecto voluptatibus omnis reiciendis veniam facilis non.</p>
+            <p id="8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nobis sed quisquam, nostrum, repellat repudiandae ratione accusamus corrupti, suscipit illo explicabo dolorem iusto perferendis excepturi! Quia expedita earum sapiente reprehenderit molestias aliquid nisi suscipit cumque. Porro error voluptas ipsam ipsum similique dolorum cupiditate nostrum laboriosam in vero. Voluptas, provident. Nesciunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur iusto nemo ut a nobis. Blanditiis nisi repudiandae in dolorum rem culpa officiis optio illo, deleniti aliquid architecto cumque dolorem.</p>
+          </div>
+    </main>
+</body>
+</html>

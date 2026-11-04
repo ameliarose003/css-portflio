@@ -1,0 +1,43 @@
+
+
+.sidebar {
+    background-color: var(--accent-800);
+    container: sidebar / inline-size;
+    padding: var(--spacing-lg);
+    justify-items: center;
+    grid-area: aside;
+
+
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+
+        li a {
+            color: var(--accent-200);
+        }
+        :hover {
+            color: var(--accent-400);
+        }
+    }
+}
+
+h2 {
+    text-align: center;
+    align-self: center;
+    color: var(--accent-500);
+    
+}
+
+@container sidebar (min-width: 500px) {
+
+    .sidebar {
+        .navigation ul {
+             flex-direction: row;
+
+         }
+
+    }
+}
+
+
+
