@@ -1,10 +1,17 @@
+
+
 .intro {
     display: grid;
     grid-template-columns: max-content minmax(0, 1fr);
+    grid-template-areas: 
+        "image about"
+    ;
     margin: var(--spacing-md);
     gap: var(--spacing-lg);
     margin-top: var(--spacing-lg);
-    
+    .intro-info {
+        grid-area: "about";
+    }
     h2 {
         margin: 0 var(--spacing-lg);
 
@@ -13,6 +20,7 @@
         margin: var(--spacing-lg);
     }
     img {
+        grid-area: "image";
         justify-items: center;
         width: 100%;
         height: auto;
@@ -42,3 +50,17 @@
     color: var(--accent-200);
 }
 
+@media (max-width: 650px) {
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image"
+            "about"
+        ;
+
+        img {
+            justify-self: center;
+        }
+    }
+}

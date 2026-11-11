@@ -1,4 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=BJCree:wght@400;500;600;700&display=swap');
+
 :root {
+    /* Layer 1: the scale (source of truth for sizes) */
+    --font-size-sm:  1rem;
+    --font-size-md:  1.8rem;
+    --font-size-lg:  2.1rem;
+    --font-size-xl:  2.4rem;
+    --font-size-2xl: 2.7rem;
+    --font-size-3xl: 3.0rem;
+
+    /* As just pixel numbers */
+    --font-size-sm-num:  16;
+    --font-size-md-num:  28.8;
+    --font-size-lg-num:  33.6;
+    --font-size-xl-num:  38.4;
+    --font-size-2xl-num: 43.2;
+    --font-size-3xl-num: 48;
+    /* Viewport boundaries */
+    --min-vw: 320;
+    --max-vw: 1600;
+
+    /* slopes */
+    --font-slope-sm-xl: calc((var(--font-size-xl-num) - var(--font-size-sm-num)) / (var(--max-vw) - var(--min-vw)));
+   
+   /* Intercept */
+    --font-intercept-rem: calc(var(--font-size-sm-num) - (var(--font-slope-sm-xl) * var(--min-vw)) / var(--font-size-sm-num));
+    
+    /* Clamp */
+    --font-clamp-sm-xl: clamp(var(--font-size-sm), calc((var(--font-slope-sm-xl) * 100vw) + (var(--font-intercept-rem) * 1rem)), var(--font-size-xl));
+    
+
+    /* Semantic roles clamped */
+    --font-size-h1-clamp: clamp(1rem, calc(1.75vw + 0.65rem), 2.4rem);
+    
+    /* Layer 2: semantic roles pointing at scale steps */
+    --font-size-body:        var(--font-size-md);
+    --font-size-body-sm:     var(--font-size-sm);
+    --font-size-caption:     var(--font-size-xs);
+    --font-size-heading-sm:  var(--font-size-xl);
+    --font-size-heading-md:  var(--font-size-2xl);
+    --font-size-heading-lg:  var(--font-size-3xl);
+    --font-size-display:     var(--font-size-4xl);
+    
+    
     /* Spacing */
     --spacing-xs: 4px;
     --spacing-sm: 8px;
@@ -8,15 +52,13 @@
 
 
     /* Typography */
-    --font-body: system-ui, -apple-system, sans-serif;
-
-    --font-body-2: 'Segoe UI', system-ui, sans-serif;
-    --font-heading: Georgia, serif;
+    --font-family-body: "BJCree", serif;
+    --font-family-heading: "BJCree", serif;
     --font-family-sans: system-ui, sans-serif;
     --font-family-mono: monospace;
-    --font-size-sm: 1.4rem;
+    /* --font-size-sm: 1.4rem;
     --font-size-md: 1.6rem;
-    --font-size-lg: 1.8rem;
+    --font-size-lg: 1.8rem; */
 
     /* Borders and Shadows */
     --radius-sm: 4px;
