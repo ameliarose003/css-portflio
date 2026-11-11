@@ -14,6 +14,8 @@ header {
     padding: var(--spacing-lg);
     border-bottom: 1px solid var(--seed-accent);
     h1 {
+        font-size: var(--font-size-h1-clamp);
+        font-weight: 400;
         a {
             color: var(--seed-accent);
             text-decoration: none;
@@ -59,4 +61,10 @@ a {
 
 a:hover {
     color: var(--seed-accent-hover);
+}
+
+@media screen and (max-width: 600px) {
+    nav ul{
+        display: none;
+    }
 }
