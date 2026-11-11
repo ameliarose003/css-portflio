@@ -15,7 +15,7 @@ header {
     border-bottom: 1px solid var(--seed-accent);
     h1 {
         font-size: var(--font-size-h1-clamp);
-        font-weight: 400;
+        font-weight: 500;
         a {
             color: var(--seed-accent);
             text-decoration: none;
