@@ -1,0 +1,66 @@
+
+@font-face {
+    font-family: "Recursive";
+    src: url("./Recursive/Recursive-VariableFont_CASL,CRSV,MONO,slnt,wght.ttf");
+    font-weight: 300 1000;
+    font-style: oblique 0deg 15deg;
+}
+
+body {
+    font-family: "Recursive", sans-serif;
+}
+
+.h2-font {
+    font-family: "Recursive", sans-serif;
+    font-weight: 1000;
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    color: var(--accent-700);
+    transition: font-weight 0.3s ease;
+}
+h2:hover {
+    font-weight: 300;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    h2 {
+        transition: none;
+    }
+}
+
+div {
+    text-align: center;
+    border-bottom: 2px solid var(--accent-500);
+    padding: var(--spacing-lg);
+    .weight {
+        font-weight: 800;
+    }
+    
+    /* .width {
+        font-stretch: 75%;
+        } */
+        
+    .slant {
+        font-style: oblique 15deg;
+    }
+    
+    .italic {
+        font-style: italic;
+    }
+    
+    .opsz {
+        font-optical-sizing: auto;
+    }
+}
+
+.custom-axes {
+    .casl {
+        font-variation-settings: "CASL" 1;
+    }
+    .crsv {
+        font-variation-settings: "CRSV" 1;
+    }
+    .mono {
+        font-variation-settings: "MONO" 1;
+    }
+}
