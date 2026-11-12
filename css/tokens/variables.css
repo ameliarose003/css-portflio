@@ -56,9 +56,8 @@
     --font-family-heading: "BJCree", serif;
     --font-family-sans: system-ui, sans-serif;
     --font-family-mono: monospace;
-    /* --font-size-sm: 1.4rem;
-    --font-size-md: 1.6rem;
-    --font-size-lg: 1.8rem; */
+
+    
 
     /* Borders and Shadows */
     --radius-sm: 4px;
@@ -97,3 +96,4 @@
         0 24px 48px oklch(0.2 0 0 / 0.06);
 
 }
+
