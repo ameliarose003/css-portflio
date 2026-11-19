@@ -1,0 +1,103 @@
+.title h1 {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    color: var(--accent-700);
+}
+main {
+    max-width: 900px;
+    margin: var(--spacing-lg) auto;
+    background-color: var(--seed-surface);
+    /* padding: var(--spacing-lg) var(--spacing-2xl) var(--spacing-2xl) var(--spacing-2xl); */
+    padding: var(--spacing-xl) var(--spacing-3xl) var(--spacing-3xl) var(--spacing-3xl);
+    
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    color: var(--accent-800);
+
+    h1, h2, h3 {
+        color: var(--accent-700);
+    }
+
+}
+
+div {
+
+    h2 {
+        border-bottom: 1px solid var(--seed-text-muted);
+
+    }
+
+
+}
+
+.education .edu-info {
+    margin: 0 var(--spacing-lg);
+}
+
+.experience ul, .project ul {
+    margin: 0 var(--spacing-2xl);
+}
+
+.resume-heading p a {
+    color: var(--accent-700);
+}
+.resume-heading p a:hover {
+    color: var(--accent-600);
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.print {
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    /* max-width: 900px; */
+    border-radius: var(--radius-md);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--accent-300);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--spacing-lg);
+}
+.print:hover {
+    background-color: var(--accent-400);
+
+}
+
+@media print {
+    body {
+        font-size: 12pt;
+        /* line-height: 1.4; */
+        margin: 0;
+    }
+    header, footer, .print, .title {
+        display: none;
+    }
+
+    main {
+        border-radius: none;
+        box-shadow: none;
+        margin: 0;
+        padding: var(--spacing-md) var(--spacing-xl) var(--spacing-xl) var(--spacing-xl);
+        max-width: none;
+        color: black;
+        h1, h2, h3 {
+            color: black;
+        }
+    }
+    .resume-heading p a {
+        font-size: 11pt;
+        text-decoration: none;
+    }
+    .resume-heading p a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.9em;
+        color: #555;
+    }
+
+}

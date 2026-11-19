@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ami's css Portfolio</title>
+    <script src="js/theme-preference.js"></script>
+    <link rel="stylesheet" href="css/components/contact.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1><a href="../../index.html">Ami's CSS Portfolio</a></h1>
+
+        <nav class="site-nav">
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Articles</a>
+                <a href="#">About</a>
+            </ul>
+            
+            <details class="theme-menu">
+                <summary class="theme-control">
+                    <span class="visually-hidden">Color scheme</span>
+                </summary>
+                <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                    <label class="theme-control theme-pick" data-theme-pick=""="light">
+                        <input name="theme-preference" type="radio" value="light">
+                        <span aria-hidden="true">&#9788;&#65039;</span>
+                        <span class="visually-hidden">Light</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="system">
+                        <input name="theme-preference" type="radio" value="system" checked>
+                        <span aria-hidden="true">&#9881;&#65039;</span>
+                        <span class="visually-hidden">System default</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="dark">
+                        <input name="theme-preference" type="radio" value="dark">
+                        <span aria-hidden="true">&#127766;</span>
+                        <span class="visually-hidden">Dark</span>
+                    </label>
+                </div>
+            </details>
+        </nav>
+    </header>
+    <div class="title"><h1>Contact Me!</h1></div>
+    <main>
+        <form action="" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Example John Doe">
+            <label for="email">Email</label>
+            <input type="email" placeholder="johndoe@example.com">
+            <label for="message">Message</label>
+            <input type="text" placeholder="Please write your message here">
+            <button type="submit">Submit Message</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2026
+    </footer>
+</body>
+</html>
+
+

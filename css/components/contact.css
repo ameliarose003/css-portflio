@@ -1,0 +1,115 @@
+
+.title {
+    text-align: center;
+    font-size: var(--font-size-heading-sm);
+}
+
+.name-email {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    justify-content: end;
+
+    .name,
+    .email {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        margin: 0;
+        
+        input {
+            border: none;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-sm);
+            width: 100%;
+            box-sizing: border-box;
+            padding: var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            border: none;
+            box-shadow: var(--shadow-sm);
+        }
+    }
+}
+
+.form-div {
+    margin: var(--spacing-sm);
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    min-width: 0;
+
+    label {
+        text-align: left;
+    }
+
+    #message {
+        width: 100%;
+        box-sizing: border-box;
+        field-sizing: content;
+        resize: vertical;
+        min-height: 50px;
+        max-height: 200px;
+        padding: var(--spacing-sm);
+        border: none;
+        border-radius: var(--radius-sm);
+        box-shadow: var(--shadow-sm);
+        scrollbar-color: var(--accent-200) var(--seed-bg);
+    }
+}
+
+.contact-me {
+    padding: var(--spacing-lg);
+    background-color: var(--accent-200);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    margin: var(--spacing-lg) 0;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: var(--spacing-lg);
+    align-items: start;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.submit-msg {
+    grid-column: 2;
+    justify-self: end;
+    margin: var(--spacing-lg) auto;
+    width: fit-content;
+    padding: var(--spacing-sm) var(--spacing-lg);
+
+    background-color: var(--accent-400);
+    border: none;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    &:focus-visible {
+        outline: 3px solid currentColor;
+        outline-offset: 3px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .submit-msg {
+        grid-column: 1;
+        justify-self: center;
+    }
+}
