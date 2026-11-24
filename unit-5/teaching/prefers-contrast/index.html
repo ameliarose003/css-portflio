@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On @media </title>
+    <script src="js/theme-preference.js"></script>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="../../../index.html">Ami's CSS Portfolio</a></h1>
+
+        <nav class="site-nav">
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Articles</a>
+                <a href="#">About</a>
+            </ul>
+            
+            <details class="theme-menu">
+                <summary class="theme-control">
+                    <span class="visually-hidden">Color scheme</span>
+                </summary>
+                <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                    <label class="theme-control theme-pick" data-theme-pick=""="light">
+                        <input name="theme-preference" type="radio" value="light">
+                        <span aria-hidden="true">&#9788;&#65039;</span>
+                        <span class="visually-hidden">Light</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="system">
+                        <input name="theme-preference" type="radio" value="system" checked>
+                        <span aria-hidden="true">&#9881;&#65039;</span>
+                        <span class="visually-hidden">System default</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="dark">
+                        <input name="theme-preference" type="radio" value="dark">
+                        <span aria-hidden="true">&#127766;</span>
+                        <span class="visually-hidden">Dark</span>
+                    </label>
+                </div>
+            </details>
+        </nav>
+    </header>
+    <div class="topic-container">
+
+        <div class="topic">
+            <h1>About @media Queries</h1>
+            
+            <div class="topic-info">
+                <h3><strong>@media queries</strong> are most commonly used for responsive screen sizes. You will learn about other use cases for @media and how it also helps with accessibility and more!</h3>
+                <p><strong>prefers-contrast:</strong> Some users will manually set the browsers to have higher or lower contrast because of their vision. This allows us to choose what colors they see on our site with a contrast difference using : more; : less; no-preference (default)</p>
+                <p><strong>:hover </strong>Devices like phones don't have the ability to hover. That's why we use a media query that checks if the device can over and reacts differently.</p>
+                <p><strong>pointer:  </strong>Similar to :hover, we can't use pointer on phones, so we need to input an @media query that gives a fallback for devices without the capability. (44px minimum for button, a, input, select)</p>
+                <p><strong>Safe-Area Evironment variables </strong>env(safe-area-inset-[top, bottom, left, right]) This is used for devices that have parts of the device covered like phones that have the camera on the front screen making it no longer a rectangle of screen.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hover">
+        <h4>This is a container that when hovered, shows the home button.</h4>
+        <div class="container">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+
+   
+    <footer>
+        &copy; 2026
+    </footer>
+</body>
+</html>
