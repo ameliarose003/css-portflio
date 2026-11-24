@@ -1,6 +1,9 @@
 :root {
     color-scheme: light;
 
+/* What I've learned::: I need to start using the seeds for what they are declared to be and stop using the --accent-num for everything unless it has an assignment.
+ */
+
     /* ---- Seeds ---- */
     --seed-bg: #f4f6f8;
     --seed-surface: #ffffff;
@@ -14,13 +17,13 @@
     --seed-border-strong: #cbd5e1;
 
     /* ---- Accent ramp ---- */
-    --accent-200: color-mix(in oklch, var(--seed-accent) 30%, white);
-    --accent-300: color-mix(in oklch, var(--seed-accent) 50%, white);
-    --accent-400: color-mix(in oklch, var(--seed-accent) 75%, white);
-    --accent-500: var(--seed-accent);
-    --accent-600: color-mix(in oklch, var(--seed-accent) 80%, black);
-    --accent-700: color-mix(in oklch, var(--seed-accent) 60%, black);
-    --accent-800: color-mix(in oklch, var(--seed-accent) 40%, black);
+    --base-accent-200: color-mix(in oklch, var(--seed-accent) 30%, white);
+    --base-accent-300: color-mix(in oklch, var(--seed-accent) 50%, white);
+    --base-accent-400: color-mix(in oklch, var(--seed-accent) 75%, white);
+    --base-accent-500: var(--seed-accent);
+    --base-accent-600: color-mix(in oklch, var(--seed-accent) 80%, black);
+    --base-accent-700: color-mix(in oklch, var(--seed-accent) 60%, black);
+    --base-accent-800: color-mix(in oklch, var(--seed-accent) 40%, black);
 
     /* Colors */
     /* --color-primary: #253668;
@@ -50,7 +53,6 @@ html {
     --color-surface: light-dark(var(--seed-surface), oklch(0.22 0.03 56.79 ));
     --color-text: light-dark(var(--seed-text), oklch(0.88 0.02 56.79 ));
     --color-text-muted: light-dark(var(--seed-text-muted), oklch(0.68 0.03 56.79 ));
-    --color-accent: light-dark(var(--seed-accent), oklch(0.62 0.15 56.79 ));
     --color-accent-hover: light-dark(var(--seed-accent-hover), oklch(0.68 0.18 56.79 ));
     --color-link: light-dark(var(--seed-link), oklch(0.65 0.16 240));
     --color-link-hover: light-dark(var(--seed-link-hover), oklch(0.72 0.18 56.79 ));
@@ -59,6 +61,16 @@ html {
 
     /* Tint the native checkboxes, radios, and range sliders */
     accent-color: var(--color-accent);
+
+    /* ---- Accent ramp ---- */
+    --accent-200: light-dark(var(--base-accent-200), var(--base-accent-800)) ;
+    --accent-300: light-dark(var(--base-accent-300), var(--base-accent-700)) ;
+    --accent-400: light-dark(var(--base-accent-400), var(--base-accent-600)) ;
+    --accent-500: light-dark(var(--seed-accent), oklch(0.62 0.15 56.79 ));
+    --accent-600: light-dark(var(--base-accent-600), var(--base-accent-400)) ;
+    --accent-700: light-dark(var(--base-accent-700), var(--base-accent-300)) ;
+    --accent-800: light-dark(var(--base-accent-800), var(--base-accent-200)) ;
+
 
     /* ---- Header chrome ---- */
     --header-bg: var(--color-accent);
@@ -72,6 +84,8 @@ html {
 
     /* ---- Shadows ---- */
     --shadow-color: light-dark(rgb(0 0 0 / 0.09), rgb(0 0 0 / 0.28));
+    --shadow-xs: 0 1px 1px 0 var(--shadow-color);
     --shadow-sm: 0 1px 2px 0 var(--shadow-color);
-    --shadow-md: 0 1px 3px 0 var(--shadow-color);
+    --shadow-md: 0 1px 2.5px 0 var(--shadow-color);
+    --shadow-lg: 0 1px 3.5px 0 var(--shadow-color);
 }
